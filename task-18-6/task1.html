@@ -6,6 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+    <h1>Regeseration Form</h1>
+    <fieldset>
+<form action="login.html"  method="set">
+        <h2>Personal details</h2>
+        <hr>
+        <label for="fname"> First Name </label>
+        <input type="text" placeholder="Anfal" id="fname" name="firstname"><br>
+        <label for="lname"> Last Name </label>
+        <input type="text" placeholder="DHERAT" id="lname" name="lastname"><br>
+        <label for="email"> Email </label>
+        <input type="email" placeholder="anfal dherat7@gmail.com" id="email" name="Email"><br>
+        <p> Gender :
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" >Male</label>
+        <input type="radio" id="fmale" name="gender" value="fmale">
+        <label for="fmale" >Female</label>
+        </p>
+        <p>City :
+            <select name="region" id="City">
+                <option value="Amman">Amman</option>
+                <option value="irbid">irbid</option>
+                <option value="aqaba">aqaba</option>
+            </select>
+        </p>
+<input type="submit" value="Sign up">
+    </fieldset>
+</form>
 </body>
 </html>

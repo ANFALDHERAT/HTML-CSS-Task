@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic HTML Form </h1>
+    <fieldset>
+        <legend>Name</legend>
+        <form>
+           <h3> <label for="fname"> First Name </label>
+            <input type="text" placeholder="Anfal" id="fname" name="firstname"><br>
+            <label for="lname"> Last Name </label>
+            <input type="text" placeholder="DHERAT" id="lname" name="lastname"></h3>
+        
+    
+    </fieldset>
+    <fieldset>
+        <legend>Other Question</legend>
+        <h3>Choose a drink : <br>
+        <input type="radio" id="coffe" name="drink" value="drinks">
+         <label for="coffe">coffe</label> <br>
+         <input type="radio" id="tea" name="drink" value="drinks" checked>
+         <label for="coffe">tea</label> <br>
+         <input type="radio" id="hot chocolate" name="drink" value="drinks">
+         <label for="coffe">hot chocolate</label> <br>
+        </h3>
+        <h3> what ice cream do you like ? <br>
+        <input type="checkbox" name="chocolate" value="chocolate" >
+        <label >chocolate</label> <br>
+        <input type="checkbox" name="chocolate pudding" value="chocolate pudding" >
+        <label >chocolate pudding</label> <br>
+        <input type="checkbox" name="chocolate peanut butter" value="chocolate peanut butter" checked>
+        <label >chocolate peanut butter</label> <br>
+        <input type="checkbox" name="vanila" value="vanila" >
+        <label >vanila</label> <br>
+        <input type="checkbox" name="strawberry " value="strawberry" >
+        <label >strawberry</label> <br>
+
+
+    </h3>
+    <h3>Select school: <br>
+    <select name="school" id="School">
+        <option value="harvard">harvard</option>
+        <option value="Irbid Model School">Irbid Model School</option>
+        <option value="House of Science Schools">House of Science Schools</option>
+    </select></h3>
+    <h3>Please provide comments: <br>
+    <textarea name="massege" rows="3" cols="20" value="comments"></textarea></h3>
+
+    </fieldset><br>
+    <input type="submit" value="submet">
+</form>
+</body>
+</html>
