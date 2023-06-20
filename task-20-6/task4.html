@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.div{
+    border: 2px dotted black;
+    display:inline-block;
+   
+}
+#active{
+   
+    border: 2px solid green;
+    background-color: green;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+}
+.normal{
+    display: inline-block;
+    border: 2px solid red;
+    background-color: red;
+    width: 100px;
+     height: 100px;
+     
+
+}
+#active2{
+    border: 2px solid green;
+    background-color: green;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+ left: 60px;
+ right: 60px;
+ bottom: 60px;
+ top: 30px;
+
+}
+#active3{
+    border: 2px solid green;
+    background-color: green;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position:absolute;
+ left: 20px;
+ right: 80px;
+ bottom: 60px;
+ top: 410px;  
+}
+    </style>
+</head>
+<p>postion : static</p>
+<body>
+    <div class="div">
+    <div class="normal">one</div>
+    <div  id="active">two</div>
+    <div class="normal">three</div>
+    <div class="normal">four</div>
+    </div> 
+<p>postion : relative</p>
+<div class="div">
+    <div class="normal">one</div>
+    <div  id="active2">two</div>
+    <div class="normal">three</div>
+    <div class="normal">four</div>
+    </div> <br><br><br>
+    <p>postion : absolute</p>
+    <div class="div">
+        <div class="normal">one</div>
+        <div  id="active3">two</div>
+        <div class="normal">three</div>
+        <div class="normal">four</div>
+        </div> <br><br><br>
+</body>
+</html>
