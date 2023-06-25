@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            
+            border-radius: 10px;
+            animation-name: example;
+            animation-duration: 7s;
+            position:relative;
+           
+            margin-left: 200px;
+            animation-timing-function: linear;
+        }
+        @keyframes example {
+     0%  {background-color: green; left:0px ; top:0px;}      
+    25%   {background: linear-gradient(to bottom, #18d040 0%, #ffffcc 100%);left:400px ;top:0px;} 
+   
+    30%  {background: linear-gradient(to bottom, #1ee6df 0%, #ffffcc 100%);left:400px ;top:400px;}
+
+    40%  {background: linear-gradient(to bottom, #0d1fe7 0%, #ffffcc 100%) ; left:0px ;top:400px;} 
+    50%  {background: linear-gradient(to bottom, #dada1e 0%, #ffffcc 100%); left:-200px ;top:400px;}
+    75%  {background: linear-gradient(to bottom, #e48a49 0%, #ffffcc 100%); left:-200px ;top:0px;}
+   100%  {background: linear-gradient(to bottom, #e70d0d 0%, #ffffcc 100%);left:0px ;top:0x;}  
+     
+        
+
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

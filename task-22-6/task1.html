@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .grid{
+      display: grid;
+    grid-template-rows: auto auto auto ;
+    grid-template-columns: auto auto auto ;
+    gap: 30px 20px;
+    }
+    .grid1{
+      display: inline-grid;
+      grid-template-columns: auto;
+      gap:20px;
+      grid-column: 1/-1;
+      height: 200px;
+
+    }
+    .grid2{
+      display: inline-grid;
+        grid-template-columns: auto auto auto;
+        grid-column: 1/4;
+        gap: 20px;
+        height: 400px;
+    }
+    
+      .grid3{
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column: 1/4;
+        gap: 20px;
+        height: 200px;
+      }
+      @media screen and (min-width:481px) and (max-width:768px) {
+        .grid1{
+          height: 100px;
+        }
+        .grid2{
+          display: inline-grid;
+          grid-template-columns: auto ;
+          grid-template-rows: auto auto auto;
+          height: 200px;
+          gap: 20px;
+        }
+        .grid3{
+          display: inline-grid;
+          grid-template-columns: auto auto;
+          grid-template-rows: auto auto;
+        }
+      }
+
+      @media screen and (max-width:480px)
+    {
+      .grid1{
+        height:100px;
+      }
+      .grid2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        height: 500px;
+      }
+      .grid3 {
+        display: grid;
+        grid-template-columns: auto;
+     
+height:500px;
+      }
+     
+      .grid3 .res6{
+        visibility: hidden;
+       
+      }
+      .grid3 .res7{
+        visibility: hidden;
+        
+      }
+      .grid3 .res8{
+        visibility: hidden;
+     
+      }
+      
+    }
+        
+</style>
+</head>
+<body>
+    
+    <div class="grid" > 
+   <div class="grid1">
+<div style="background-color: rgb(120, 147, 79);  " class="res1"></div>
+   </div>
+<div class="grid2">
+<div style="background-color: rgb(59, 205, 227);  " class="res2"></div>
+<div style="background-color:  rgb(59, 205, 227);  " class="res3"></div>
+<div style="background-color:  rgb(59, 205, 227); " class="res4"></div>
+</div>
+   <div class="grid3">
+<div  style="background-color: grey; "  class="res5"></div>
+<div style="background-color: grey;  " class="res6"></div>
+<div style="background-color: grey;  " class="res7"></div>
+<div style="background-color: grey;  " class="res8"></div>
+</div>
+    </div>
+
+</body>
+</html>
